@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoolClimate - Climate Change Impact Portal</title>
+    <link rel="icon" href="earth.png">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary-color: #2d2d2d;
+            --accent-color: #2bb673;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: lightgreen;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid black;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav a:hover {
+            color: var(--light-gray);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h1,
+        h2 {
+            color: var(--accent-color);
+        }
+
+        input,
+        select,
+        button {
+            padding: 0.5rem;
+            margin: 0.3rem 0;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        .footprint-results {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: lightgreen;
+            color: black;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+
+        #home{
+            background-color: lightgreen;
+        }
+
+        #heading{
+            color: black;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        #logo{
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #developer{
+            text-decoration: underline;
+            color: black;
+            font-family: cursive;
+            font-weight: bolder;
+            color: var(--primary-color);
+        }
+
+        #quote{
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo"><strong>🌱 CoolClimate</strong></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#facts">Facts</a>
+            <a href="#tracker">Tracker</a>
+            <a href="#tips">Tips</a>
+            <a href="#contact">Contact</a>
+            <a href="https://science.nasa.gov/climate-change/what-is-climate-change/" target="_blank">Climate Change ?</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" name="home">
+            <h1 id="heading">Welcome to the Climate Impact Portal 🌍</h1>
+          <center>  <img src="climate.png" alt="Climate Change"> </center>
+            <p>Understand your carbon footprint and explore how climate change is affecting our world. This website
+                offers actionable insights and fun facts to get you started.</p>
+            <ul>
+                <strong>
+                <li>Track your personal carbon emissions</li>
+                <li>Discover facts and global trends</li>
+                <li>Learn simple tips to reduce your impact</li>
+                <li>Connect for climate advocay and environmental awareness</li>
+            </strong>
+            </ul>
+        </section>
+
+        <!-- Climate Change -->
+        <section id="climate" name="climate">
+            <h2>What is Climate Change? 🌊 </h2>
+            <p>
+                Climate change is a long-term change in the average weather patterns that have come to define Earth’s local, regional and global climates. These changes have a broad range of observed effects that are synonymous with the term.
+
+                “Climate change” and “global warming” are often used interchangeably but have distinct meanings. Similarly, the terms "weather" and "climate" are sometimes confused, though they refer to events with broadly different spatial- and timescales.
+            </p>
+            <center>
+            <a href="https://science.nasa.gov/climate-change/what-is-climate-change/" target="_blank">
+            <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/internal_resources/2722/OMGglacierimage-1920.jpeg?w=1920&h=1177&fit=clip&crop=faces%2Cfocalpoint" width="700" alt="Climate Change">
+            </a>
+            </center>
+
+            <p id="climate">
+                Changes observed in Earth’s climate since the mid-20th century are <b> driven by human activities </b>, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature. Natural processes, which have been overwhelmed by human activities, can also contribute to climate change, including internal variability (e.g., cyclical ocean patterns like El Niño, La Niña and the Pacific Decadal Oscillation) and external forcings (e.g., volcanic activity, changes in the Sun’s energy output, variations in Earth’s orbit).
+                
+                <br>
+            </p>
+            <span id="quote"><strong>
+                    <blockquote>- 🌍 NASA</blockquote>
+                </strong></span>
+        </section>
+
+        <!-- Climate Change Equation -->
+        <section id="climateEQ" name="climateEQ">
+            <h2>Equation of Climate Change (CO<sub>2</sub> emissions)? 👨‍🔬 </h2>
+            <p id="cequation">
+            <strike> 🌊 Climate Change = Excessive consumption of fossil Fules</strike>
+            <br>
+            <strong> 🌊 Climate Change = (Total Population) x (Per Capita Consumption (Raw Materials))</strong>
+            </p>
+            <span id="quote"><strong>
+                    <blockquote>- Vivek Singh</blockquote>
+                </strong></span>
+        </section>
+
+        <!-- Facts Section -->
+        <section id="facts" name="facts">
+            <h2>Climate Facts & Stats 📊</h2>
+            <ul>
+                <li>🌡 Global temperatures have risen by 1.1°C since the pre-industrial era.</li>
+                <li>🧊 Arctic sea ice is shrinking at a rate of 13% per decade.</li>
+                <li>🚗 Transportation accounts for 29% of global emissions.</li>
+                <li>💧 AI data centers consume billions of liters of water yearly for cooling.</li>
+            </ul>
+            <span id="quote"><strong><blockquote>"The Earth does not belong to us: we belong to the Earth." – Marlee Matlin</blockquote></strong></span>
+        </section>
+
+        <!-- Tracker Section -->
+        <section id="tracker" name="tracker">
+            <h2>Carbon Footprint Tracker 🧮</h2>
+
+            <label for="electricity">Electricity Usage (kWh/month):</label>
+            <input type="range" id="electricity" name="electricity" min="0" max="1000" step="10" value="500"
+                oninput="document.getElementById('elecVal').textContent = this.value">
+            <span id="elecVal">500</span> kWh
+            <br>
+            <label for="travel">Travel Mode:</label>
+            <select id="travel">
+                <option value="car">Car</option>
+                <option value="bus">Bus</option>
+                <option value="bike">Bike</option>
+                <option value="plane">Plane</option>
+            </select>
+            <br>
+            <label>Meat Consumption:</label><br>
+            <input type="radio" name="meat" value="low" checked> Low
+            <br>
+            <input type="radio" name="meat" value="medium"> Medium
+            <br>
+            <input type="radio" name="meat" value="high"> High
+            <br>
+            <button onclick="calculateFootprint()">Calculate</button>
+
+            <div class="footprint-results" id="carbon-result"></div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" name="tips">
+            <h2>Tips to Reduce Your Impact 🌱</h2>
+            <ol>
+                <strong>
+                <li>Promote less population density.</li>
+                <li>Reduce meat consumption and avoid food waste.</li>
+                <li>Support renewable energy sources and eco-friendly brands.</li>
+                <li>Educate others and advocate for systemic changes.</li>
+                </strong>
+            </ol>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" name="contact">
+            <h2>Connect With Us 📬</h2>
+            <p>Want to collaborate or learn more? Drop us a message!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required /> <br>
+                <input type="email" placeholder="Your Email" required /><br>
+                <textarea rows="7" cols="51" placeholder="Your Message..."></textarea><br>
+                <button type="submit">Send</button><br>
+            </form>
+        </section>
+
+        <!-- CoolClimate About -->
+        <section id="about" name="about">
+            <h2>About CoolClimate 🧭</h2>
+            <p>
+                <strong>CoolClimate</strong> is a student-led initiative to bring awareness about climate change through facts, trackers, and
+                actions.
+                We believe that accessible and actionable information empowers change.
+            </p>
+            <p>This website is designed for education and advocacy. Built using semantic HTML, responsive design, and clean styles inspired by Medium.</p>
+            <strong>
+            <p>Want to contribute? Reach us at </strong> <i> <a href="mailto:climate@cool.org">climate@cool.org</a></i>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 CoolClimate Initiative | Built with 💚 for awareness</p>
+        <p>Designed and Developed by: 💼 <a target="_blank" href="https://www.linkedin.com/in/vivek-singh-858941201/" id="developer">Vivek Singh</a></p>
+
+    </footer>
+
+    <script>
+        function calculateFootprint() {
+            const electricity = parseInt(document.getElementById("electricity").value);
+
+            const travelMode = document.getElementById("travel").value;
+            let travelEmission = 0;
+            switch (travelMode) {
+                case "car": travelEmission = 2.3; break;
+                case "bus": travelEmission = 1.2; break;
+                case "bike": travelEmission = 0; break;
+                case "plane": travelEmission = 5.0; break;
+            }
+
+            const meatChoice = document.querySelector('input[name="meat"]:checked').value;
+            let meatEmission = 0;
+            switch (meatChoice) {
+                case "low": meatEmission = 1.0; break;
+                case "medium": meatEmission = 2.5; break;
+                case "high": meatEmission = 4.0; break;
+            }
+
+            const total = (electricity * 0.0005) + travelEmission + meatEmission;
+            document.getElementById("carbon-result").innerText =
+                "Estimated Monthly Carbon Footprint: " + total.toFixed(2) + " tons CO₂";
+        }
+    </script>
+</body>
+</html>
